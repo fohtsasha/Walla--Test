@@ -1,0 +1,14 @@
+{
+  "name": "Walla! Test",
+  "type": "module",
+  "devDependencies": {
+    "@wdio/firefox-profile-service": "^9.6.3",
+    "@wdio/local-runner": "^9.7.2",
+    "@wdio/mocha-framework": "^9.7.2",
+    "@wdio/spec-reporter": "^9.6.3",
+    "wdio-wait-for": "^3.0.11"
+  },
+  "scripts": {
+    "wdio": "wdio run ./wdio.conf.js"
+  }
+}
