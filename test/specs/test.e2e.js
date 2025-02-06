@@ -1,11 +1,14 @@
 import page from '../../page'; 
 describe('Searching for a flight', () => {
-    it('Setting the from & to', async () => {
+    it('Results page appears', async () => {
         await browser.url(`/`)
-        //await page.fillCountry('Tel Aviv', 'Paris');    
+        await page.fillCountry('paris');  
+        await browser.pause(1000);  
         await page.selectDate();
-       // await searchButton.click();
-        //await expect($(page.flightTickets)).toBeExisting();
+        await browser.pause(1000);
+        await page.clickSearchButton();
+        await browser.pause(3000);
+        await expect($(page.flightTickets)).toBeExisting();
     })
 });
 
